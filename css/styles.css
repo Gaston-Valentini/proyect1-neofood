@@ -27,6 +27,7 @@
     font-size: 2em;
     color: #C9AB81;
     font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 1px 1px 1px #000;
 }
 .navbar-brand:hover {
     cursor: auto;
@@ -109,12 +110,14 @@
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
     color: #C9AB81;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .headerTitle {
     font-size: 3em;
     font-family: 'Cinzel Decorative', cursive;
     color: #C9AB81;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .headerText {
@@ -277,4 +280,128 @@
     .specialitiesTexts {
         padding: 50px 20px;
     }
+}
+
+/* MENU */
+
+.firstMenuImage {
+    margin-top: 75px;
+    height: 500px;
+    background-image: url("../images/menuStarters.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.firstMenuImage::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.firstMenuImageText {
+    position: relative;
+    font-size: 3em;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #C9AB81;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.menu {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #0F1D22;
+    border-top: 1px solid #C9AB81;
+    border-bottom: 1px solid #C9AB81;
+}
+
+.menuTitle {
+    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif;
+    color: #C9AB81;
+    letter-spacing: 5px;
+}
+
+.menuCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.menuCardsCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menuCardsCardText {
+    width: 100%;
+}
+  
+.menuCardsCardTextName {
+    display: flex;
+    align-items: center;
+}
+  
+.menuCardsCardTextName div {
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    color: #C9AB81;
+}
+
+.menuCardsCardTextName hr {
+    flex-grow: 1;
+    border: 1px solid #C9AB81;
+    margin: 0 10px;
+}
+  
+.menuCardsCardTextIngredients {
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    color: #fff;
+}
+
+.menuCardsCardPrice {
+    align-self: flex-start;
+    font-size: 1.6em;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #C9AB81;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 50px 20px;
+    }
+    .menuCards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.menuBanner1, .menuBanner2, .menuBanner3 {
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(0.3);
+}
+
+.menuBanner1 {
+    background-image: url("https://images8.alphacoders.com/127/1278428.jpg");
+}
+.menuBanner2 {
+    background-image: url("../images/menuCake.jpg");
+}
+.menuBanner3 {
+    background-image: url("../images/menuCocktail.jpg");
 }
