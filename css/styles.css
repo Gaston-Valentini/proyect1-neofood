@@ -471,3 +471,123 @@
         height: calc(100vh - 269px);
     }
 }
+
+/* CONTACT */
+
+.contact {
+    margin-top: 75px;
+    height: calc(100vh - 75px);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/contactBg.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.contactShadow {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contactTitles {
+    text-align: center;
+}
+
+.contactTitlesSubtitle {
+    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.contactTitlesTitle {
+    font-size: 3em;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #C9AB81;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.contactInfo {
+    display: flex;
+    gap: 100px;
+}
+
+.contactInfoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+}
+
+.contactInfoForm input {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #C9AB81;
+}
+
+.contactInfoForm textarea {
+    font-size: 1.2em;
+    color: #fff;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #C9AB81;
+    resize: none;
+}
+
+.contactInfoForm input:focus, .contactInfoForm textarea:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contactInfoForm input::placeholder, .contactInfoForm textarea::placeholder {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.contactInfoData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contactInfoDataTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.contactInfoDataSocial {
+    display: flex;
+    gap: 20px;
+    font-size: 3em;
+    color: #C9AB81;
+}
+.contactInfoDataSocial:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 991px) {
+    .contactShadow {
+        padding: 20px;
+    }
+    .contactInfo {
+        flex-direction: column;
+    }
+    .contactInfoForm {
+        width: auto;
+    }
+}
