@@ -405,3 +405,69 @@
 .menuBanner3 {
     background-image: url("../images/menuCocktail.jpg");
 }
+
+/* TEAM */
+
+.teamTitle {
+    margin-top: 75px;
+    padding: 50px 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0F1D22;
+    color: #C9AB81;
+    font-size: 3em;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+
+.team {
+    height: calc(100vh - 197px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F1D22;
+}
+
+.carousel {
+    height: 80%;
+    width: 40%;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.d-block {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.carouselName {
+    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif;
+    color: #C9AB81;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.carouselPosition {
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+}
+
+@media(max-width: 991px) {
+    .carousel {
+        width: 80%;
+    }
+}
+
+@media(max-width: 602px) {
+    .team {
+        height: calc(100vh - 269px);
+    }
+}
