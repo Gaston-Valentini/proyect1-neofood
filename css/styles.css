@@ -136,3 +136,145 @@
     background-color: #000;
     transition: 0.3s;
 }
+
+/* ABOUT */
+
+.about {
+    margin-top: 75px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #0B1315;
+}
+
+.aboutTexts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutTextsSubtitle {
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: #C9AB81;
+}
+
+.aboutTextsTitle {
+    font-size: 3em;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #C9AB81;
+}
+
+.aboutTextsText {
+    max-width: 30em;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.aboutImages {
+    width: 100%;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    gap: 30px;
+}
+
+.aboutImagesImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutImagesImageFood {
+    object-fit: cover;
+    box-shadow: 3px 3px 5px black;
+}
+
+.aboutImagesImageLogo {
+    object-fit: contain;
+}
+
+@media(max-width: 1400px) {
+    .aboutImages {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px;
+    }
+}
+
+@media(max-width: 700px) {
+    .about {
+        padding: 50px 20px;
+    }
+}
+
+/* SPECIALITIES */
+
+.specialities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    outline: 1px solid #C9AB81;
+}
+
+.specialitiesTexts {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    background-color: #0F1D22;
+}
+
+.specialitiesTextsSubtitle {
+    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.specialitiesTextsTitle {
+    font-size: 2.6em;
+    font-family: 'Raleway', sans-serif;
+    color: #C9AB81;
+}
+
+.specialitiesTextsText {
+    max-width: 700px;
+    font-size: 1.3em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    color: #AFB8B8;
+}
+
+.specialitiesTextsButton {
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border: 1px solid #C9AB81;
+    font-weight: 100;
+    text-decoration: none;
+    color: #fff;
+}
+.specialitiesTextsButton:hover {
+    background-color: #000;
+    transition: 0.3s;
+}
+
+.specialitiesImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 991px) {
+    .specialities {
+        grid-template-columns: 1fr;
+    }
+    .specialitiesTexts {
+        padding: 50px 20px;
+    }
+}
