@@ -24,6 +24,7 @@
 
 ## - Bugs conocidos:
 #### * En la sección "team" por motivos desconocidos se puierde el texto del slider en algunas resoluciones de pantalla.
+#### * El proyecto presenta fallas de diseño en algunas vistas si se observa en un dispositivo móvil de manera horizontal, debido a que se utilizó la propiedad "height: 100vh" para el diseño de estas vistas.
 
 ## - En caso de contar con mas tiempo de desarrollo me hubiese gustado agregar:
 #### * Mejoras de diseño

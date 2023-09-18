@@ -521,11 +521,13 @@
 .contactInfoForm {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
     width: 400px;
 }
 
 .contactInfoForm input {
+    width: 100%;
     font-size: 1.2em;
     color: #fff;
     background-color: rgba(0, 0, 0, 0);
@@ -534,6 +536,7 @@
 }
 
 .contactInfoForm textarea {
+    width: 100%;
     font-size: 1.2em;
     color: #fff;
     height: 100px;
@@ -551,6 +554,17 @@
 .contactInfoForm input::placeholder, .contactInfoForm textarea::placeholder {
     font-size: 1.2em;
     color: #fff;
+}
+
+.contactInfoFormSubmit {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    outline: 1px solid #C9AB81;
+    color: #fff;
+}
+.contactInfoFormSubmit:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .contactInfoData {
@@ -592,13 +606,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
     .contactInfo {
         flex-direction: column;
         gap: 20px;
-        border: 1px solid #C9AB81;
-        padding: 30px;
+        outline: 1px solid #C9AB81;
+        padding: 20px;
     }
     .contactInfoForm {
         width: auto;
@@ -614,6 +628,10 @@
         font-size: 1.6em;
     }
     .contactInfoForm input, .contactInfoForm textarea{
+        font-size: 0.8em;
+    }
+    .contactInfoFormSubmit {
+        padding: 5px 10px;
         font-size: 0.8em;
     }
     .contactInfoDataTexts {
