@@ -479,7 +479,6 @@
 .contact {
     margin-top: 75px;
     height: calc(100vh - 75px);
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -516,7 +515,7 @@
 
 .contactInfo {
     display: flex;
-    gap: 100px;
+    gap: 50px;
 }
 
 .contactInfoForm {
@@ -582,14 +581,45 @@
     cursor: pointer;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 801px) {
+    .contact {
+        padding: 0;
+    }
     .contactShadow {
-        padding: 20px;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
     .contactInfo {
         flex-direction: column;
+        gap: 20px;
+        border: 1px solid #C9AB81;
+        padding: 30px;
     }
     .contactInfoForm {
         width: auto;
+        gap: 15px;
+    }
+    .contactInfoData {
+        gap: 20px;
+    }
+    .contactTitlesSubtitle {
+        font-size: 1.2em;
+    }
+    .contactTitlesTitle {
+        font-size: 1.6em;
+    }
+    .contactInfoForm input, .contactInfoForm textarea{
+        font-size: 0.8em;
+    }
+    .contactInfoDataTexts {
+        font-size: 0.8em;
+    }
+    .contactInfoDataSocial {
+        font-size: 1.8em;
     }
 }
