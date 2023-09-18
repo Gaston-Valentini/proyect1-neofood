@@ -82,7 +82,7 @@
 
 .header {
     margin-top: 75px;
-    height: calc(100vh - 74px);
+    height: calc(100vh - 75px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,7 +220,8 @@
 .specialities {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    outline: 1px solid #C9AB81;
+    border-top: 1px solid #C9AB81;
+    border-bottom: 1px solid #C9AB81;
 }
 
 .specialitiesTexts {
@@ -309,6 +310,7 @@
     position: relative;
     font-size: 3em;
     font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
     color: #C9AB81;
     text-shadow: 1px 1px 1px #000;
 }
