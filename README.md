@@ -1,4 +1,4 @@
-## - Repositorio del proyecto: https://github.com/Gaston-Valentini/neofood
+## - Repositorio del proyecto: https://github.com/Gaston-Valentini/proyect1-neofood
 
 ## - Título: NEOFOOD
 
